@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* @media (max-width: 400px){ */
+
+    body {
+        background-color: red;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        justify-content: center;
+    }
+
+        .rate {
+            background-color: var(--Purple-500);
+        }
+
+            .rate h2 {
+                color: var(--White);
+                font-size: 2em;
+                text-align: center;
+            }
+
+
+/* } */
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }

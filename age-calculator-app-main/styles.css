@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /* Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    width: 100%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    padding: 30px;
+    border-radius: 10px 10px 70px 10px;
+    background-color: var(--White);
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+    #container-inputs {
+        display: flex;
+    }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+            .inputs label {
+                font-size: .5rem;
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+
+            .inputs input {
+                padding: 10px 50px 10px 10px;
+                margin-right: 10px;
+                width: 150px;
+                border: 1px solid var(--Smokey-grey);
+                border-radius: 4px;
+                font-weight: 800;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+
+        .access label {
+            color: lightgreen;
+        }
+
+        .access input {
+            border-color: lightgreen;
+        } 
+
+        .error label {
+            color: var(--Light-red);
+        }
+
+        .error input {
+            border-color: var(--Light-red);
+        }
+
+        .error i {
+            color: var(--Light-red);
+            font-size: 0.3em;
+            margin-top: 6px;
+        }
+    
+    #container-btn {
+        position: relative;
+        padding-right: 20px;
+    }
+        #container-btn hr {
+            margin: 30px 0;
+        }
+
+        #container-btn svg {
+            position: absolute;
+            right: 20px;
+            top: -1px;
+            background-color: var(--Purple);
+            border-radius: 100%;
+            padding: 16px;
+        }
+
+        #container-btn svg:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+    #container-results {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+        #container-results p {
+            font-size: 5rem;
+            font-weight: 800;
+        }
+
+        #container-results p i {
+            color: var(--Purple);
+            letter-spacing: 20px;
+        }
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
