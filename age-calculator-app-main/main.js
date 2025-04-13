@@ -5,3 +5,4 @@ const yearInput = document.querySelector('#year').value;
 console.log(dayInput);
 console.log(monthInput);
 console.log(yearInput);
+  
