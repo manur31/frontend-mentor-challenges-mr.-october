@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Inter';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px  130px 50px 130px;
+}
+
+    header nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--Dark-grayish-blue);
+            font-weight: 400;
+        }
+
+            header nav a:hover {
+                color: var(--Soft-red);
+            }
+
+    header .icon-menu {
+        display: none;
+    }
+
+.menu {
+    display: none;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+    .menu article {
+        background: var(--Off-white);
+        width: 70%;
+        height: 100%;
+        position: relative;
+    }
+
+        .menu article img {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+        }
+
+        .menu article nav {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 150px;
+            padding: 0 30px;
+        }
+
+            .menu article nav a {
+                text-decoration: none;
+                color: var(--Dark-grayish-blue);
+                font-weight: 400;
+            }
+
+             .menu article nav a:hover {
+                color: var(--Soft-red);
+             }
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 382.5px);
+    gap: 30px 16px;
+    padding: 0 130px;
+    margin: 0;
+}
+
+    .web-desktop {
+        width: 760px;
+        height: 300px;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+        .web-desktop img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .web-mobile {
+        display: none;
+    }
+
+    h1 {
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 4em;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+    .info {
+        grid-column: 2 / 3;
+    }
+
+        .info p {
+            color: var(--Dark-grayish-blue);
+            line-height: 1.7;
+            font-size: 1em;
+            padding-right: 50px;
+        }
+
+        .info button {
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            color: var(--Very-dark-blue);
+            font-weight: 700;
+            font-size: 1em;
+            letter-spacing: .2em;
+            padding: 16px 32px;
+            margin-top: 35px;
+            background: var(--Soft-red);
+        }
+
+            .info button:hover {
+                color: var(--Off-white);
+                background: var(--Very-dark-blue);
+                cursor: pointer;
+            }
+    
+    .new {
+        grid-area: 1 / 3 / 3 / 4;
+        background: var(--Very-dark-blue);
+        padding: 20px;
+    }
+
+        .new h2 {
+            font-size: 2.8em;
+            color: var(--Soft-orange);
+            margin: 16px 0;
+        }
+
+        .new h3 {
+            font-size: 1.2em;
+            color: var(--Off-white);
+            margin-top: 16px;
+        }
+
+            .new h3:hover {
+                color: var(--Soft-orange);
+                cursor: pointer;
+            }
+
+        .new p {
+            font-size: 1em;
+            color: var(--Dark-grayish-blue);
+            margin-top: 16px;
+            word-spacing: 2px;
+            line-height: 1.5;
+        }
+
+        .new hr {
+            margin: 30px 0;
+            border-color: var(--Dark-grayish-blue);
+        }
+
+    .news {
+        grid-area: 3 / 1 / 4 / 4;
+        display: flex;
+        gap: 16px;
+    }
+
+        .news section {
+            display: flex;
+            width: 382.5px;
+            margin-top: 40px;
+
+        }
+
+            .news section img {
+                width: 100px;
+                height: 130px;
+                object-fit: cover;
+            }
+
+            .news-info {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+                .news-info h3 {
+                    color: var(--Soft-red);
+                    font-size: 2em;
+                    margin-top: 5px;
+                }
+
+                .news-info h2 {
+                    font-size: 1.2em;
+                    margin-top: 5px;
+                }
+
+                    .news-info h2:hover {
+                        color: var(--Soft-red);
+                        cursor: pointer;
+                    }
+
+                .news-info p {
+                    font-size: .8em;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin-top: 5px;
+                    padding-right: 70px;
+                    color: var(--Dark-grayish-blue);
+                }
+
+footer {
+    margin: 100px 0 ;
+}
+            
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+        .attribution a { 
+            color: hsl(228, 45%, 44%); 
+        }
+
+
+
+@media (max-width: 400px){
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px 20px 20px;
+    }
+
+        header nav {
+            display: none;
+        }
+
+        header .icon-menu {
+            display: block;
+        }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'web-mobile'
+        'h1'
+        'info'
+        'new'
+        'news'
+        ;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+        .web-desktop {
+            display: none;
+        }
+
+        .web-mobile {
+            display: block;
+            width: 100%;
+            height: 300px;
+            grid-area: web-mobile;
+            margin-top: 10px;
+        }
+
+            .web-mobile img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        h1{
+           grid-area: h1;
+        }
+
+        .info {
+            grid-area: info;
+        }
+
+        .new {
+            grid-area: new;
+        }
+
+        .news {
+            grid-area: news;
+            flex-direction: column;
+        }
+
+}
